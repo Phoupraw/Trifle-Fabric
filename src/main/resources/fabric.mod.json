@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "trifle",
+  "version": "${version}",
+
+  "name": "Trifle",
+  "description": "{\"text\": \"test\"}",
+  "authors": [
+    "Ph-苯"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/trifle/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ph.mcmod.counter.MainKt::init"
+    ]
+  },
+  "mixins": [
+    "trifle.mixin.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.17.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
